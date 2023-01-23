@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+body{
+  width: 100%;
+  position: absolute;
+  right: 0;
+  /* background-image: url(https://media.monsterindia.com/career-advice/wp-content/uploads/2021/11/web-developer-interview-questions-and-answers.jpg); */
+  /* background-color: black; */
+  background-size: cover;
+  background-attachment: fixed;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.part{
+  display: flex;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar{
+  background-color: #111418!important;
+  color: white;
+  height: 100vh;
+  width: 260px;
+  position: fixed;
+  left: 0;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+.upper{
+  padding-top: 3rem;
+}
+.upper img{
+  /* border: 5px solid rgb(2, 56, 17); */
+  border: 5px solid rgb(65, 52, 52);
+  border-radius: 50rem!important;
+
+}
+
+.ankit{
+  text-align:center ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.list a{
   color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.list{
+  padding: 20px;
+}
+.list a:hover{
+  color:rgb(6, 121, 39);
 }
 
-.App-link {
-  color: #61dafb;
+.lower img{
+  width: 20px;
+  padding: 10px;
+  /* position: absolute; */
+  background-color: white;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.lower{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.part1{
+  /* margin-bottom: auto!important;
+  margin-top: auto!important; */
+  height: 100vh;
+  margin-left: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.para{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  
+  color: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.btn {
+  border-width: 2px;
+  font-weight: 500;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid green;
+  padding: 0.8rem 2.6rem;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+.welcome{
+text-align: center;
+font-size: 2rem;
+font-weight: 700;
+padding: 0px;
+}
+.NSUT{
+  text-align: center;
+  font-size: 20px;
+}
+.para2{
+  background-color: red;
+}
+.Typewriter__wrapper{
+  font-size: 3rem;
+font-weight: 700;
+}
+
+@media only screen and (max-width: 900px) {
+  .part {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .part1{
+    margin-left: 0px;
   }
+  .typewriter h1{
+    font-size: 1rem;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    /* border-right: .15em solid orange;  */
+    white-space: nowrap;
+    /* margin: 0 auto;  */
+    /* letter-spacing: .15em;  */
+      animation-name: typing;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+  }
+}
+
+.typewriter h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; 
+  /* border-right: .15em solid orange;  */
+  white-space: nowrap;
+  /* margin: 0 auto;  */
+  /* letter-spacing: .15em;  */
+    animation-name: typing;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }

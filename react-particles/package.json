@@ -1,0 +1,11 @@
+{
+  "name": "react-particles",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-particles-js": "^3.6.0",
+    "react-tsparticles": "^2.8.0",
+    "reactstrap": "^9.1.5"
+  }
+}
