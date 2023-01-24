@@ -1,5 +1,8 @@
 import React from 'react';
 import Self from '../components/Self.png';
+import {AiFillGithub} from 'react-icons/ai'
+import {BsInstagram} from 'react-icons/bs'
+import {AiOutlineLinkedin} from 'react-icons/ai'
 
 export default function sidebar() {
   return (
@@ -21,10 +24,9 @@ export default function sidebar() {
       </div>
 
       <div className="lower">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" />
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="" />
-
-        <img src="https://cdn-icons-png.flaticon.com/512/4138/4138168.png" alt="" />
+        <a href=""> <AiFillGithub/></a>
+        <a href=""> <BsInstagram/></a>
+        <a href=""><AiOutlineLinkedin/></a>
       </div>
     </div>
 

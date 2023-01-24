@@ -7,6 +7,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Projects from './components/Projects';
 import Navbar from './components/Navbar';
+import Succidea from './components/Succidea';
 
 function App() {
 
@@ -123,6 +124,7 @@ const particlesLoaded = useCallback(async container => {
       <Sidebar/>
       <Part1/>
       <Part2/>
+      <Succidea/>
       <Projects/>
       {/* <Back/> */}
     </div>
