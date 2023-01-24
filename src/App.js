@@ -5,7 +5,8 @@ import Part2 from './components/Part2';
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-
+import Projects from './components/Projects';
+import Navbar from './components/Navbar';
 
 function App() {
 
@@ -118,10 +119,11 @@ const particlesLoaded = useCallback(async container => {
 
 
 
-
+      <Navbar/>
       <Sidebar/>
       <Part1/>
       <Part2/>
+      <Projects/>
       {/* <Back/> */}
     </div>
   );
