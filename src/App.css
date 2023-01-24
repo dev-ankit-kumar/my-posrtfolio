@@ -382,7 +382,7 @@ font-weight: 600;
   flex-direction: column;
 
   /* height: 100vh; */
-  background-color: rgba(60, 58, 164, 0.8);
+  background-color: rgba(7, 6, 59, 0.8);
   padding: 3rem;
 }
 
@@ -451,6 +451,12 @@ font-weight: 600;
   }
   .info{
     color: white;
+  }
+  .info-right{
+    width: 100%;
+  }
+  .info-left{
+    width: 100%;
   }
   .website-image{
     width: 100%;
