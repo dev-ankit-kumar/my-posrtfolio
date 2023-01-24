@@ -407,7 +407,7 @@ font-weight: 600;
   width: 100%;
   overflow: scroll;
 }
-.succidea-logo-info img{
+.succidea-logo-info a{
   display: none !important;
 }
 .succidea-logo-info p{
