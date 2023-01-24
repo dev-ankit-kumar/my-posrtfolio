@@ -1,5 +1,7 @@
 import React from 'react';
-import Laptop from'../components/Laptop.png'
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 
 export default function Part2() {
 
@@ -15,6 +17,8 @@ export default function Part2() {
             Know me more
             </div>
         </div>
+        <AnimationOnScroll animateIn="animate__bounceIn">
+
         <div className="intro">
           <div className="intro-left-section">
           <h2>I'm <span className="name">Ankit Kumar</span>,a web developer</h2>
@@ -34,7 +38,10 @@ export default function Part2() {
             </ul>
             <button className="btn-download-resume">Download resume</button>
           </div>
+          
         </div>
+        </AnimationOnScroll>
+
     </div>
   )
 }

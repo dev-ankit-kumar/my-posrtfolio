@@ -1,9 +1,15 @@
 import React from 'react'
 import Fox from '../components/Fox.png'
 import Todo from '../components/Todo.png'
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 export default function Projects() {
   return (
     <div className='projects part3'>
+
+    <AnimationOnScroll animateIn="animate__bounceIn">
+
     <div className="fox web">
         <div className="website-image">
         <img src={Fox} alt=""  className='bg-image' /  >
@@ -17,6 +23,9 @@ export default function Projects() {
         <p className="language">Html Css Javascript</p>
         </div>
     </div>
+    </AnimationOnScroll>
+
+    <AnimationOnScroll animateIn="animate__bounceIn">
 
     <div className="todo web">
     <div className="info-left">
@@ -32,6 +41,8 @@ export default function Projects() {
         <img src={Todo} alt=""  className='bg-image' / >
         </div>
     </div>
+    </AnimationOnScroll>
+
     </div>
   )
 }
