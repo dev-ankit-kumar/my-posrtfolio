@@ -4,7 +4,7 @@ width: 100vw;
   overflow-x: hidden;
   background-size: cover;
   background-attachment: fixed;
-  
+
 }
 
 
@@ -46,9 +46,29 @@ width: 100vw;
 .navbar .menu{
 background-color: rgb(5, 6, 74);
 width: 100%;
-height: 3rem;
+/* height: 3rem; */
 position: relative;
-display: none;
+display: flex;
+/* display: none; */
+}
+.links{
+  width: 100%;
+  text-align: center;
+  
+}
+.links ul{
+  text-align: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  padding-left: 0;
+  padding-right: 1rem;
+}
+.links a{
+  /* display: flex; */
+  gap: 3rem;
+  color: white;
+  text-decoration: none;
 }
 .hamburger-react{
   color: white;
@@ -57,7 +77,9 @@ display: none;
 .menu-btn{
   background-color: transparent;
   border: none;
+  display: none;
 }
+
 @keyframes moving{
   from{
     height: 0px;
@@ -77,28 +99,31 @@ display: none;
 
 
 .part{
-  display: flex;
+  display: none;
   justify-content: space-around;
+
 }
 
 
 .sidebar{
+  /* background-color: rgb(3, 3, 56)!important; */
   background-color: #111418!important;
   color: white;
   height: 100vh;
-  width: 260px;
+  /* width: 260px; */
   position: fixed;
   left: 0;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   
+
   align-items: center;
   
 }
 
 .upper{
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .upper img{
   /* border: 5px solid rgb(2, 56, 17); */
@@ -122,6 +147,7 @@ display: none;
   color: white;
   text-decoration: none;
   padding: 10px;
+  letter-spacing: 2px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 1rem;
   font-weight: 700;
@@ -141,7 +167,7 @@ display: none;
 
 .lower a{
   
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -151,17 +177,19 @@ display: none;
   justify-content: center;
   gap: 2rem;
   align-items: end;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .part1{
   /* margin-bottom: auto!important;
   margin-top: auto!important; */
   height: 100vh;
-  margin-left: 260px;
-  display: flex;
+  /* margin-left: 260px; */
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   
@@ -169,10 +197,13 @@ display: none;
 
 
 .para{
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 10rem;
   overflow: hidden;
-  
+  /* width: 100%; */
+ height: 100%;
+  /* padding-right: 2rem; */
+  padding-left: 2rem;
   color: white;
   position: relative;
   margin-left: auto;
@@ -182,20 +213,37 @@ display: none;
 
 .btn {
   border-width: 2px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 3px;
   border-radius: 50px;
   background-color: transparent;
   color: white;
+
   border: 1px solid green;
   padding: 0.8rem 2.6rem;
   transition: all .5s ease;
   cursor: pointer;
 }
+.btn:hover{
+  background-color: #20c997;
+
+}
 .welcome{
-text-align: center;
+/* text-align: center; */
 font-size: 2rem;
 font-weight: 700;
 padding: 0px;
+}
+.welcome h3{
+  font-size: 2rem;
+}
+.para h2{
+  font-size: 6rem;
+  color: #20c997;
+
+}
+.A{
+  font-size: 9rem;
 }
 .NSUT{
   text-align: center;
@@ -211,6 +259,8 @@ padding: 0px;
 font-weight: 700;
 }
 
+
+
 @media only screen and (max-width: 900px) {
   .part {
     display: none;
@@ -218,7 +268,12 @@ font-weight: 700;
   .part1{
     margin-left: 0;
   }
-
+.menu-btn{
+  display: block;
+}
+.links{
+  display: none;
+}
   .part2{
     margin-left: 0 !important;
   }
@@ -230,9 +285,11 @@ font-weight: 700;
   }
 
   .typewriter h1{
-    font-size: 1rem;
+    font-size: 3rem;
+    font-family: 'Aboreto';
+
     color: #fff;
-    font-family: monospace;
+    /* font-family: monospace; */
     overflow: hidden; 
     /* border-right: .15em solid orange;  */
     white-space: nowrap;
@@ -247,6 +304,14 @@ font-weight: 700;
   }
   .succidea{
     margin-left: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .me img{
+    width: 30%;
+  }
+  .me{
+    margin: 3rem;
   }
 
 }
@@ -254,7 +319,9 @@ font-weight: 700;
 .typewriter h1 {
   font-size: 2rem;
   color: #fff;
-  font-family: monospace;
+  font-family: 'Aboreto';
+
+  /* font-family: monospace; */
   overflow: hidden; 
   /* border-right: .15em solid orange;  */
   white-space: nowrap;
@@ -285,7 +352,7 @@ font-weight: 700;
 .part2{
   color: white;
   position: relative;
-  margin-left: 260px;
+  /* margin-left: 260px; */
   background-color: rgb(36, 41, 45,0.8)!important;
   padding-bottom: 5rem;
   /* height: 100vh; */
@@ -391,6 +458,28 @@ font-weight: 600;
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .typewriter h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Aboreto';
+
+    /* font-family: monospace; */
+    overflow: hidden; 
+    /* border-right: .15em solid orange;  */
+    white-space: nowrap;
+    /* margin: 0 auto;  */
+    /* letter-spacing: .15em;  */
+      animation-name: typing;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+  }
+  .para h2{
+    font-size: 4rem;
+  }
+  .A{
+    font-size: 7rem;
+  }
   
 .intro-left-section{
   
@@ -415,6 +504,21 @@ font-weight: 600;
 }
 }
 
+@media only screen and (max-width:400px) {
+  .para h2{
+    font-size: 2rem;
+  }
+  .A{
+    font-size: 5rem;
+  }
+  .typewriter h1 {
+    font-size: 2rem;
+    font-family: 'Aboreto';
+
+  }
+}
+
+
 @media only screen and (max-width:850px) {
   .info-right{
     width: 100%;
@@ -432,31 +536,32 @@ font-weight: 600;
 
 
 
-
 .succidea{
   /* height: 100vh; */
   position: relative;
   background-color: rgb(3, 3, 56);
-  margin-left: 260px;
+  /* margin-left: 260px; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: row; */
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 2rem;
 }
 
 .me{
-  margin-top: 3rem;
-  width: 100%;
-  margin-bottom: 3rem;
+  /* margin-top: 3rem; */
+  /* width: 100%; */
+  /* margin-bottom: 3rem; */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  
 }
 .me img{
-  width: 40%;
+  width: 100%;
   border-radius: 50%;
+
   /* height: 20rem; */
 
 }
@@ -486,7 +591,7 @@ font-weight: 600;
 }
 .succidea-logo-info a{
   display: flex;
-  width: 20%;
+  /* width: 20%; */
 
 }
 .succidea-logo-info img{
@@ -496,7 +601,7 @@ font-weight: 600;
 }
 .succidea-logo-info p{
   display: flex;
-  width: 70%;
+  /* width: 70%; */
 
 }
 
@@ -516,7 +621,7 @@ font-weight: 600;
 .projects{
   color: white;
   position: relative;
-  margin-left: 260px;
+  /* margin-left: 260px; */
   display: flex;
   flex-direction: column;
 
@@ -605,8 +710,27 @@ font-weight: 600;
     font-size: 30px;
   }
 }
+@media only screen and (max-width:350px) {
+  .about{
+    font-size: 1rem;
+  
+  }
+  .me{
+    margin: 0;
+  }
+  .typewriter h1{
+    font-size: 1rem;
+    font-family: 'Aboreto';
 
+  }
+  
+}
 
+@media (max-width:900px){
+  .founder{
+    padding: 0;
+  }
+}
 
 
 

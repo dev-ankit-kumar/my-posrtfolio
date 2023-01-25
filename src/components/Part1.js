@@ -38,19 +38,22 @@ export default function Main() {
 
     <div className="para">
         
-      <div class="col-12 text-center">
+      {/* <div class="col-12 text-center"> */}
         <div className="welcome">
-          <h3>Welcome</h3>
+          <h3>Hi i'm</h3>
         </div>
+        
+        <div style={{fontFamily: 'Creepster',letterSpacing:'5px'
+}}><h2><span className='A' >A</span>nkit <span className='A' >K</span>umar</h2></div>
+        
         <div class="typewriter">
         <h1>I am a <br /> Web Developer.</h1>
         </div>
-        <h2>Ankit Kumar</h2>
         <button className="btn">
           Hire me
         </button>
         
-    </div>
+    {/* </div> */}
 
     </div>
     </div>

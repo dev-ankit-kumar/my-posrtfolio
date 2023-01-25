@@ -14,7 +14,7 @@ const x={
 }
 const y={
   overflow:'auto',
-  height:'50vh'
+  height:'80vh'
 }
 let showmenu=()=>{
   setopen(!open)
@@ -23,10 +23,27 @@ let showmenu=()=>{
   return (
     <div className='navbar'>
       <div className="menu">
+
         <button className='menu-btn' onClick={showmenu}>
            <Hamburger />
-           </button>
+        </button>
+
+        <div className="links">
+        <ul>
+        <a href="/">1. Home</a>
+        <a href="/">2. About me</a>
+        <a href="/">3. What I do</a>
+        <a href="/">4. Resume</a>
+        <a href="/">5. Portfolio</a>
+        <a href="/">6. Conatct</a>
+        </ul>
+        </div>
+
       </div>
+      
+      
+
+    
 
       <div className="list" style={open?x:y}>
         <ul>

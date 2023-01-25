@@ -3,7 +3,8 @@ import Self from '../components/Self.png';
 import {AiFillGithub} from 'react-icons/ai'
 import {BsInstagram} from 'react-icons/bs'
 import {AiOutlineLinkedin} from 'react-icons/ai'
-
+import Logome from '../components/Logome.png'
+import {FiFacebook} from 'react-icons/fi'
 export default function sidebar() {
   return (
     <div className="part">
@@ -27,6 +28,7 @@ export default function sidebar() {
         <a href=""> <AiFillGithub/></a>
         <a href=""> <BsInstagram/></a>
         <a href=""><AiOutlineLinkedin/></a>
+        <a href=""><FiFacebook/></a>
       </div>
     </div>
 
