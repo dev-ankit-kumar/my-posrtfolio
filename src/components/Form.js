@@ -80,7 +80,7 @@ export default function Form() {
     <div style={{position: 'absolute' ,left: '-5000px', ariaHidden:'true'}} ><input type="text" name="b_798d89feb5f90fc583ad55501_76b92a3be3" tabindex="-1" value=""/></div>
         <div className="optionalParent">
             <div className="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
+                <input type="submit" value="Contact" name="subscribe" id="mc-embedded-subscribe" className="button"/>
                 <p className="brandingLogo"><a href="http://eepurl.com/ija9WX" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"/></a></p>
             </div>
         </div>
