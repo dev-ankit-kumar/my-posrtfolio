@@ -8,6 +8,7 @@ import { loadFull } from "tsparticles";
 import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import Succidea from './components/Succidea';
+import Form from './components/Form';
 
 function App() {
 
@@ -127,6 +128,7 @@ const particlesLoaded = useCallback(async container => {
       <Part2/>
       <Succidea/>
       <Projects/>
+      <Form/>
       {/* <Back/> */}
     </div>
   );
