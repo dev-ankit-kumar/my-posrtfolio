@@ -29,14 +29,14 @@ let showmenu=()=>{
         </button>
 
         <div className="links">
-        <ul>
+        
         <a href="/">1. Home</a>
         <a href="/">2. About me</a>
         <a href="/">3. What I do</a>
         <a href="/">4. Resume</a>
         <a href="/">5. Portfolio</a>
         <a href="/">6. Conatct</a>
-        </ul>
+       
         </div>
 
       </div>

@@ -1,19 +1,15 @@
 import React from 'react'
+import {useRef} from 'react';
 
 
 export default function Main() {
 
-
-
   
-
-
-
-
-
   
   return (
     
+    
+
     
     <div className='part1'>
 
@@ -49,7 +45,7 @@ export default function Main() {
         <div class="typewriter">
         <h1>I am a <br /> Web Developer.</h1>
         </div>
-        <button className="btn">
+        <button className="btn"  >
           Hire me
         </button>
         

@@ -10,7 +10,19 @@ import Navbar from './components/Navbar';
 import Succidea from './components/Succidea';
 import Form from './components/Form';
 
+
 function App() {
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
@@ -128,7 +140,7 @@ const particlesLoaded = useCallback(async container => {
       <Part2/>
       <Succidea/>
       <Projects/>
-      <Form/>
+      <Form   />
       {/* <Back/> */}
     </div>
   );
