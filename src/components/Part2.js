@@ -1,10 +1,26 @@
 import React from 'react';
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Resume from '../components/Resume.pdf'
 
 
 export default function Part2() {
 
+
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('Resume.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Resume.pdf';
+            alink.click();
+        })
+    })
+}
 
 
   return (
@@ -36,7 +52,7 @@ export default function Part2() {
               <li><span>Phone</span>: 9667357277</li>
               <li><span>From</span>: NSUT Delhi,India</li>
             </ul>
-            <button className="btn-download-resume">Download resume</button>
+            <button onClick={onButtonClick} className="btn-download-resume">Download resume</button>
           </div>
           
         </div>

@@ -1,10 +1,14 @@
 import React from 'react'
 import Hamburger from 'hamburger-react'
 import { useState } from 'react'
+import Resume from '../components/Resume.pdf'
 
 export default function Navbar() {
  
- 
+ let ShowResume=()=>{
+  window.open(Resume);
+
+ }
 
 const[open,setopen]=useState(true);
 
@@ -33,7 +37,7 @@ let showmenu=()=>{
         <a href="/">1. Home</a>
         <a href="/">2. About me</a>
         <a href="/">3. What I do</a>
-        <a href="/">4. Resume</a>
+        <a onClick={ShowResume} href="/">4. Resume</a>
         <a href="/">5. Portfolio</a>
         <a href="/">6. Conatct</a>
        

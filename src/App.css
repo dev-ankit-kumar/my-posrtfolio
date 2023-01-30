@@ -14,6 +14,8 @@ width: 100vw;
  
 .navbar{
   background-color: rgb(5, 6, 74);
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  font-family: 'Pacifico', cursive;
 
 }
 .navbar .list{
@@ -254,7 +256,9 @@ padding: 0px;
 }
 .para h2{
   font-size: 6rem;
-  color: #20c997;
+  /* color: #20c997; */
+  color: rgb(66, 68, 188);
+
 
 }
 .A{
@@ -605,7 +609,7 @@ font-weight: 600;
 .succidea-logo-info p{
   display: flex;
   /* width: 70%; */
-
+  padding-top: 10px;
 }
 
 
